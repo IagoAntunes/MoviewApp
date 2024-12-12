@@ -11,42 +11,36 @@ data class SearchResult(
     @SerializedName("first_air_date")
     val firstAirDate: String,
     @SerializedName("genre_ids")
-    val gender: Int,
-    @SerializedName("id")
     val genreIds: List<Int>,
-    @SerializedName("original_language")
+    @SerializedName("id")
     val id: Int,
-    @SerializedName("original_title")
-    val knownFor: List<KnownFor>,
-    @SerializedName("overview")
-    val knownForDepartment: String,
-    @SerializedName("popularity")
+    @SerializedName("media_type")
     val mediaType: String,
-    @SerializedName("poster_path")
+    @SerializedName("name")
     val name: String,
-    @SerializedName("release_date")
+    @SerializedName("origin_country")
     val originCountry: List<String>,
-    @SerializedName("title")
+    @SerializedName("original_language")
     val originalLanguage: String,
-    @SerializedName("video")
+    @SerializedName("original_name")
     val originalName: String,
-    @SerializedName("vote_average")
+    @SerializedName("original_title")
     val originalTitle: String,
-    @SerializedName("vote_count")
+    @SerializedName("overview")
     val overview: String,
     @SerializedName("popularity")
     val popularity: Double,
     @SerializedName("poster_path")
     val posterPath: String,
-    @SerializedName("release_date")
+    @SerializedName("profile_path")
     val profilePath: String,
-    @SerializedName("title")
+    @SerializedName("release_date")
     val releaseDate: String,
-    @SerializedName("video")
+    @SerializedName("title")
     val title: String,
-    @SerializedName("vote_average")
+    @SerializedName("video")
     val video: Boolean,
-    @SerializedName("vote_count")
+    @SerializedName("vote_average")
     val voteAverage: Double,
     @SerializedName("vote_count")
     val voteCount: Int

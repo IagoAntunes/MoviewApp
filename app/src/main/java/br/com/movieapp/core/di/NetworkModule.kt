@@ -3,6 +3,7 @@ package br.com.movieapp.core.di
 import br.com.movieapp.BuildConfig
 import br.com.movieapp.core.data.remote.MovieService
 import br.com.movieapp.core.data.remote.ParamsInterceptor
+import br.com.movieapp.core.util.LoggingInterceptor
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -43,6 +44,7 @@ object NetworkModule {
         return OkHttpClient.Builder()
             .addInterceptor(paramsInterceptor)
             .addInterceptor(loggingInterceptor)
+            .addInterceptor(LoggingInterceptor())
             .connectTimeout(TIMEOUT_SECONDS, TimeUnit.SECONDS)
             .readTimeout(TIMEOUT_SECONDS, TimeUnit.SECONDS)
             .build()
