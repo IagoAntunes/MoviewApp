@@ -10,7 +10,7 @@ import javax.inject.Inject
 interface GetMovieSearchUseCase {
 
     operator fun invoke(params:Params) : Flow<PagingData<MovieSearch>>
-    data class Params(val query:String)
+    data class Params(val query: String)
 
 }
 
